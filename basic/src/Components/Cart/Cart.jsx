@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, decrementquantity, removeFromCart } from '../Redux/ProductAction/ProductAction';
 
-
 const Cart = () => {
     // cartdata from redux variables
     const cart_data = useSelector((state) => state.Productdata.cartdata)
@@ -14,6 +13,7 @@ const Cart = () => {
     }, 0)
 
     const dispatch = useDispatch()
+
 
     return (
         <>
